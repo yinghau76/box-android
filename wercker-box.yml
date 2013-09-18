@@ -21,7 +21,7 @@ script: |-
   sudo apt-get install -qq --force-yes libgd2-xpm ia32-libs ia32-libs-multiarch
   
   df -h
-  sudo apt-get remove --purge --qq --force-yes `cat purge.list`
+  sudo apt-get remove --purge --force-yes `cat purge.list`
   sudo dpkg --get-selections
   df -h
   fail_now
