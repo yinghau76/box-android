@@ -1,11 +1,37 @@
 name: android
-version: 0.0.11-rc5
+version: 0.0.11-rc6
 inherits: flenter/java@0.1.4
 type: main
 platform: ubuntu@12.04
 description: A box created for Android development
 keywords:
   - android
+script: |
+  sdk_version="22.2"
+
+  profile="/etc/environment"
+
+  # Start with a clean profile
+  cd $HOME
+
+  # prepare packages
+  source $WERCKER_SOURCE_DIR/prepare-packages.sh
+
+  # remove old ones
+  source $WERCKER_SOURCE_DIR/purge-packages.sh
+
+  # list installed packages
+  sudo dpkg --get-selections
+
+  ## SDK ##
+  source $WERCKER_SOURCE_DIR/install-sdk.sh
+  source $WERCKER_SOURCE_DIR/update-sdk.sh
+
+  # install graddle
+  source $WERCKER_SOURCE_DIR/install-gradle.sh
+
+  cat $profile
+
 # box-detect:
 #   priority : 200
 #   version:
@@ -33,30 +59,4 @@ keywords:
 #               code: |
 #                 gradle -v
 #                 gradle --refresh-dependencies --rerun-tasks --full-stacktrace build -q
-
-script: |-
-  sdk_version="22.2"
-
-  profile="/etc/environment"
-
-  # Start with a clean profile
-  cd $HOME
-
-  # prepare packages
-  source $WERCKER_SOURCE_DIR/prepare-packages.sh
-
-  # remove old ones
-  source $WERCKER_SOURCE_DIR/purge-packages.sh
-
-  # list installed packages
-  sudo dpkg --get-selections
-
-  ## SDK ##
-  source $WERCKER_SOURCE_DIR/install-sdk.sh
-  source $WERCKER_SOURCE_DIR/update-sdk.sh
-
-  # install graddle
-  source $WERCKER_SOURCE_DIR/install-gradle.sh
-
-  cat $profile
 
