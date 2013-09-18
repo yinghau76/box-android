@@ -26,8 +26,6 @@ script: |-
   source $WERCKER_SOURCE_DIR/install-sdk.sh
   source $WERCKER_SOURCE_DIR/update-sdk.sh
 
-  fail_now
-
   # install graddle
   source $WERCKER_SOURCE_DIR/install-gradle.sh
 
