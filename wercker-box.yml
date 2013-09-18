@@ -1,5 +1,5 @@
 name: android
-version: 0.0.11-alpha
+version: 0.0.11-rc1
 inherits: flenter/java@0.1.4
 type: main
 platform: ubuntu@12.04
@@ -8,7 +8,7 @@ keywords:
   - android
 script: |-
   sdk_version="22.2"
-  profile="$HOME/.bashrc"
+  profile="/etc/environment"
 
   # Start with a clean profile
   cd $HOME
