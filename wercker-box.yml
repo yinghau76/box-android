@@ -31,4 +31,3 @@ script: |-
   source $WERCKER_SOURCE_DIR/install-gradle.sh
 
   cat $profile
-  fail_now
