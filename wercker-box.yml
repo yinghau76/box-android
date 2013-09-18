@@ -23,8 +23,11 @@ script: |-
   # list installed packages
   sudo dpkg --get-selections
 
+  ## SDK ##
   source $WERCKER_SOURCE_DIR/install-sdk.sh
   source $WERCKER_SOURCE_DIR/update-sdk.sh
+
+  # install graddle
   source $WERCKER_SOURCE_DIR/install-gradle.sh
 
   fail_now
