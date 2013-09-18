@@ -7,24 +7,19 @@ description: A box created for Android development
 keywords:
   - android
 script: |-
-  sdk_version="22.0.5"
+  sdk_version="22.2"
   profile="$HOME/.bashrc"
 
-  cd $HOME
-
   # Start with a clean profile
+  cd $HOME
   echo '' > "$profile"
 
-  # Install prerequisites
-  sudo apt-get update -qq
-  sudo apt-get install -qq --force-yes expect
-  sudo apt-get install -qq --force-yes libgd2-xpm ia32-libs ia32-libs-multiarch
-  df -h
-  sudo apt-get remove --purge --force-yes `cat $WERCKER_SOURCE_DIR/purge.list`
-  sudo apt-get autoremove
+  source $WERCKER_SOURCE_DIR/prepare-packages.sh
+  source $WERCKER_SOURCE_DIR/purge-packages.sh
+  source
+
+  # list installed packages
   sudo dpkg --get-selections
-  df -h
-  fail_now
 
   # Install SDK
   wget "http://dl.google.com/android/android-sdk_r${sdk_version}-linux.tgz"
@@ -51,4 +46,3 @@ script: |-
 
   # Install all available sdk tools
   expect /pipeline/build/android-update.exp
-  sudo apt-get clean
