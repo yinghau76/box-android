@@ -24,7 +24,7 @@ export ANDROID_BUILD_TOOLS="17.0.0,18.0.1"
 
 # Write environment variables setup to $profile
 echo "export ANDROID_HOME=\"${ANDROID_HOME}\"" | sudo tee -a $profile
-echo "export ANDROID_BUILD_TOOLS=\"${ANDROID_BUILD_TOOLS}\""
+echo "export ANDROID_BUILD_TOOLS=\"${ANDROID_BUILD_TOOLS}\"" | sudo tee -a $profile
 echo "export PATH=\"${PATH}:${ANDROID_HOME}/tools:${ANDROID_HOME}/platform-tools\"" | sudo tee -a $profile
 
 # Print $profile
