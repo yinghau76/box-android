@@ -18,7 +18,7 @@ mv $ANDROID_HOME/android-4.3 $ANDROID_HOME/build-tools/18.0.1
 
 # Write environment variables setup to $profile
 echo "export ANDROID_HOME=\"${ANDROID_HOME}\"" | sudo tee -a $profile
-echo 'export PATH="${PATH}:${ANDROID_HOME}/tools:${ANDROID_HOME}/platform-tools"' | sudo tee -a $profile
+echo "export PATH=\"${PATH}:${ANDROID_HOME}/tools:${ANDROID_HOME}/platform-tools\"" | sudo tee -a $profile
 
 # Print $profile
 echo -e "$profile updated to:\n\n$(cat $profile)"

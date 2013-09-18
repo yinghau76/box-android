@@ -7,4 +7,4 @@ export GRADLE_HOME=$HOME/gradle-1.7
 export PATH=$PATH:$GRADLE_HOME/bin
 
 echo "export GRADLE_HOME=\"${HOME}/gradle-1.7\"" | sudo tee -a $profile
-echo 'export PATH="${PATH}:${GRADLE_HOME}/bin"' | sudo tee -a $profile
+echo "export PATH=\"${PATH}:${GRADLE_HOME}/bin\"" | sudo tee -a $profile
