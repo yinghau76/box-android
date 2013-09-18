@@ -12,7 +12,6 @@ script: |-
 
   # Start with a clean profile
   cd $HOME
-  echo '' > "$profile"
 
   # prepare packages
   source $WERCKER_SOURCE_DIR/prepare-packages.sh
