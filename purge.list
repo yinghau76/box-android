@@ -1,1 +1,7 @@
-erlang memcached libmemcached6 libmysqlclient18 libmysqlclient-dev mysql-common mysql-client
+erlang
+memcached
+libmemcached6
+libmysqlclient18
+libmysqlclient-dev
+mysql-common
+mysql-client
