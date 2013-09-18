@@ -14,9 +14,11 @@ script: |-
   cd $HOME
   echo '' > "$profile"
 
+  # prepare packages
   source $WERCKER_SOURCE_DIR/prepare-packages.sh
+
+  # remove old ones
   source $WERCKER_SOURCE_DIR/purge-packages.sh
-  source
 
   # list installed packages
   sudo dpkg --get-selections
@@ -46,3 +48,4 @@ script: |-
 
   # Install all available sdk tools
   expect /pipeline/build/android-update.exp
+  fail_now
