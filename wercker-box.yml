@@ -1,5 +1,5 @@
 name: android
-version: 0.0.12
+version: 0.0.13
 inherits: flenter/java@0.1.4
 type: main
 platform: ubuntu@12.04
@@ -33,9 +33,7 @@ default-build:
           - script:
               name: run gradle
               code: |
-                gradle -v
-                gradle --refresh-dependencies --rerun-tasks --full-stacktrace build -q
-
+                gradle --full-stacktrace -q --project-cache-dir=$WERCKER_CACHE_DIR build
 script: |
   sdk_version="22.2"
 
