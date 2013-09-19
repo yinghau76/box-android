@@ -51,7 +51,7 @@ There are a number of environment varaibles declared for your information:
 # What's new
 * expanded readme.
 * ANDROID_SDK_VERSION environment variable added
- 
+
 
 # License
 
@@ -78,7 +78,10 @@ CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE SOFTWARE.
 
 # Changelog
 
-## 0.0.14 
+## 0.0.15
+* $ added for environment variables in the default wercker.yml
+
+## 0.0.14
 * expanded readme.
 * ANDROID_SDK_VERSION environment variable added
 
