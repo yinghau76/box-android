@@ -49,8 +49,7 @@ There are a number of environment varaibles declared for your information:
 * ANDROID_UPDATE_FILTER : shows all sdk elements which are installed
 
 # What's new
-* expanded readme.
-* ANDROID_SDK_VERSION environment variable added
+* dollar sign added for environment variables in the default wercker.yml
 
 
 # License
