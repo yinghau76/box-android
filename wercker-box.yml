@@ -1,11 +1,41 @@
 name: android
-version: 0.0.11
+version: 0.0.12
 inherits: flenter/java@0.1.4
 type: main
 platform: ubuntu@12.04
 description: A box created for Android development
 keywords:
   - android
+box-detect:
+  priority : 200
+  version:
+  detect:
+    - files:
+      - build.gradle
+default-build:
+  android:
+    priority : 50
+    detect:
+      - default: true
+    text-to-append: |
+      # Build definition
+      build:
+        # The steps that will be executed on build
+        steps:
+          - script:
+              name: show base information
+              code: |
+                gradle -v
+                echo ANDROID_HOME
+                echo ANDROID_BUILD_TOOLS
+                echo ANDROID_UPDATE_FILTER
+          # A step that executes `gradle build` command
+          - script:
+              name: run gradle
+              code: |
+                gradle -v
+                gradle --refresh-dependencies --rerun-tasks --full-stacktrace build -q
+
 script: |
   sdk_version="22.2"
 
@@ -31,34 +61,4 @@ script: |
   source $WERCKER_SOURCE_DIR/install-gradle.sh
 
   cat $profile
-
-box-detect:
-  priority : 200
-  version:
-  detect:
-    - inFiles:
-      - build.gradle : com.android.tools
-default-build:
-  android:
-    priority : 50
-    detect:
-      - default: true
-    text-to-append: |
-      # Build definition
-      build:
-        # The steps that will be executed on build
-        steps:
-          - script:
-              name: show base information
-              code: |
-                gradle -v
-                echo ANDROID_HOME
-                echo ANDROID_BUILD_TOOLS
-                echo ANDROID_UPDATE_FILTER
-          # A step that executes `gradle build` command
-          - script:
-              name: run gradle
-              code: |
-                gradle -v
-                gradle --refresh-dependencies --rerun-tasks --full-stacktrace build -q
 
