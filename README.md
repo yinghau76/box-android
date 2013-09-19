@@ -3,6 +3,9 @@
 A box that adds Android support to wercker.
 
 # What's new
+* build tools 17 and 18.0.1
+* gradle 1.7 added
+* detect script added for android boxes (assumes it's android if there's a build.gradle).
 
 - ...
 
