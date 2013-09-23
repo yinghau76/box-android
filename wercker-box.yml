@@ -7,12 +7,17 @@ description: A box created for Android development
 keywords:
   - android
   - gradle
+  - maven
+  - ant
+  - oracle java 7t
+  - ivy
 box-detect:
   priority : 200
   version:
   detect:
     - files:
       - build.gradle
+
 default-build:
   android:
     priority : 50
