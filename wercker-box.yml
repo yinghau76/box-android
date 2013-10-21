@@ -65,9 +65,22 @@ script: |
   export $GRADLE_VERSION=1.7
   # install graddle
   source $WERCKER_SOURCE_DIR/install-gradle.sh
-  
+
   export $GRADLE_VERSION=1.8
   # install graddle
   source $WERCKER_SOURCE_DIR/install-gradle.sh
 
   cat $profile
+  eport GRADLE_HOME=$HOME/gradle-$GRADLE_VERSION
+  export PATH=$PATH:$GRADLE_HOME/bin
+
+  echo "export GRADLE_HOME=\"${HOME}/gradle-${GRADLE_VERSION}\"" | sudo tee -a $profile
+  ADLE_VERSION-bin.zip
+  mv gradle-$GRADLE_VERSION $HOME
+
+  export GRADLE_HOME=$HOME/gradle-$GRADLE_VERSION
+  export PATH=$PATH:$GRADLE_HOME/bin
+
+  echo "export GRADLE_HOME=\"${HOME}/gradle-${GRADLE_VERSION}\"" | sudo tee -a $profile
+  echo "export PATH=\"${PATH}:${GRADLE_HOME}/bin\"" | sudo tee -a $profile
+
