@@ -8,7 +8,7 @@
 
 The `wercker/android` box runs on ubuntu 12.04 and provides a selection of the android toolchain:
 
-* gradle 1.7
+* gradle 1.7 and 1.8 (1.8 enabled by default)
 * android sdk version 22.2
 * android build tools r17 en 18.0.1
 * android support library
@@ -78,6 +78,8 @@ CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE SOFTWARE.
 
 # Changelog
 
+## 0.0.16
+* switched to gradle 1.8 (1.7 is still available)
 ## 0.0.15
 * $ added for environment variables in the default wercker.yml
 
