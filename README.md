@@ -44,6 +44,7 @@ build:
 
 
 There are a number of environment varaibles declared for your information:
+
 * ANDROID_SDK_VERSION : version of the sdk
 * ANDROID_BUILD_TOOLS : which versions of the build tools are installed.
 * ANDROID_UPDATE_FILTER : shows all sdk elements which are installed
