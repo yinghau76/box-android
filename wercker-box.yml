@@ -66,7 +66,7 @@ script: |
   # install graddle
   source $WERCKER_SOURCE_DIR/install-gradle.sh
 
-  export GRADLE_HOME=$HOME/gradle-
+  export GRADLE_HOME=$HOME/gradle-1.8
   export PATH=$PATH:$GRADLE_HOME/bin
 
   echo "export GRADLE_HOME=\"${HOME}/gradle-1.8\"" | sudo tee -a $profile
