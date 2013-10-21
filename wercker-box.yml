@@ -1,5 +1,5 @@
 name: android
-version: 0.0.16-rc1
+version: 0.0.16-rc2
 inherits: pjvds/java@0.1.3
 type: main
 platform: ubuntu@12.04
@@ -61,10 +61,6 @@ script: |
   ## SDK ##
   source $WERCKER_SOURCE_DIR/install-sdk.sh
   source $WERCKER_SOURCE_DIR/update-sdk.sh
-
-  export GRADLE_VERSION=1.7
-  # install graddle
-  source $WERCKER_SOURCE_DIR/install-gradle.sh
 
   export GRADLE_VERSION=1.8
   # install graddle
