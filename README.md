@@ -3,12 +3,16 @@
 ## Guides
 
 * [Getting started with android and wercker - part 1](http://blog.wercker.com/2013/09/19/Gettingstarted-with-android-part-1.html)
+* [Getting started with android and wercker - part 2](http://blog.wercker.com/2013/09/24/Gettingstarted-with-android-part-2.html)
+* [Getting started with android and wercker - part 3](http://blog.wercker.com/2013/09/27/Gettingstarted-with-android-part-3.html)
+* [Getting started with android and wercker - part 4](http://blog.wercker.com/2013/10/04/Getting-started-with-android-part-4.html)
+* [Autoincrement versioning for android](http://blog.wercker.com/2013/10/11/auto-increment-versioning-for-android.html)
 
 ## android box
 
 The `wercker/android` box runs on ubuntu 12.04 and provides a selection of the android toolchain:
 
-* gradle 1.8 (1.8 enabled by default)
+* gradle 1.8
 * android sdk version 22.2
 * android build tools r17 en 18.0.1
 * android support library
@@ -50,7 +54,7 @@ There are a number of environment varaibles declared for your information:
 * ANDROID_UPDATE_FILTER : shows all sdk elements which are installed
 
 # What's new
-* dollar sign added for environment variables in the default wercker.yml
+* updated guides section
 
 
 # License
