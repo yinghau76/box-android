@@ -16,7 +16,7 @@ The `wercker/android` box runs on ubuntu 12.04 and provides a selection of the a
 * android sdk version 22.2.1
 * android build tools r17, 18.0.1 and 19
 * android API r17 (version 4.2.2), 18 (android 4.3) and 19 (android 4.4)
-* sys image 19 (emulators)
+* sys image 18, 19 (emulators)
 * android support library
 
 The box also inherits tools from a not yet official java box, resulting in the following additional tools:
@@ -82,6 +82,12 @@ IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM, OUT OF OR IN
 CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE SOFTWARE.
 
 # Changelog
+
+## 0.0.19
+* sys image 18
+
+## 0.0.18
+* sys image 19
 
 ## 0.0.17
 * android sdk version bumped to 22.2.1
