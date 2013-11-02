@@ -13,10 +13,10 @@
 The `wercker/android` box runs on ubuntu 12.04 and provides a selection of the android toolchain:
 
 * gradle 1.8
-* android sdk version 22.2
-* android build tools r17 en 18.0.1
+* android sdk version 22.2.1
+* android build tools r17, 18.0.1 and 19
+* android API r17 (version 4.2.2), 18 (android 4.3) and 19 (android 4.4)
 * android support library
-* android API r17 (version 4.2.2) and 18 (android 4.3)
 
 The box also inherits tools from a not yet official java box, resulting in the following additional tools:
 
@@ -81,6 +81,10 @@ IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM, OUT OF OR IN
 CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE SOFTWARE.
 
 # Changelog
+
+## 0.0.17
+* android sdk version bumped to 22.2.1
+* build tools release 19 added (Android 4.4)
 
 ## 0.0.16
 * switched to gradle 1.8
