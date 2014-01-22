@@ -1,5 +1,5 @@
 name: android
-version: 0.0.19
+version: 0.1.0
 inherits: pjvds/java@0.1.3
 type: main
 platform: ubuntu@12.04
@@ -36,6 +36,7 @@ default-build:
                 echo $ANDROID_SDK_VERSION
                 echo $ANDROID_BUILD_TOOLS
                 echo $ANDROID_UPDATE_FILTER
+                echo $ANDROID_NDK_HOME
           # A step that executes `gradle build` command
           - script:
               name: run gradle
@@ -46,6 +47,7 @@ env:
 
 script: |
   sdk_version="22.2.1"
+  ndk_version="9c"
 
   profile="/etc/environment"
 
@@ -64,6 +66,9 @@ script: |
   ## SDK ##
   source $WERCKER_SOURCE_DIR/install-sdk.sh
   source $WERCKER_SOURCE_DIR/update-sdk.sh
+
+  ## NDK ##
+  source $WERCKER_SOURCE_DIR/install-ndk.sh
 
   export GRADLE_VERSION=1.8
   # install graddle
