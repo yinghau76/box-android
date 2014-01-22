@@ -13,3 +13,4 @@ echo "export ANDROID_NDK_HOME=\"${ANDROID_NDK_HOME}\"" | sudo tee -a $profile
 
 # Print $profile
 echo -e "$profile updated to:\n\n$(cat $profile)"
+echo "export ANDROID_NDK_VERSION=\"${ndk_version}\"" | sudo tee -a $profile
