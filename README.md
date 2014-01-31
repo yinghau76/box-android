@@ -18,7 +18,6 @@ The `wercker/android` box runs on ubuntu 12.04 and provides a selection of the a
 * android API r17 (version 4.2.2), 18 (android 4.3) and 19 (android 4.4)
 * sys image 18, 19 (emulators)
 * android support library
-* android ndk r9c
 
 The box also inherits tools from a not yet official java box, resulting in the following additional tools:
 

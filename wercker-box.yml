@@ -62,24 +62,19 @@ script: |
   # remove old ones
   source $WERCKER_SOURCE_DIR/purge-packages.sh
 
-  du -h
   # list installed packages
   sudo dpkg --get-selections
 
   ## SDK ##
   source $WERCKER_SOURCE_DIR/install-sdk.sh
-  du -h
   source $WERCKER_SOURCE_DIR/update-sdk.sh
-  du -h
 
-  ## NDK ##
-  source $WERCKER_SOURCE_DIR/install-ndk.sh
-  du -h
+  # ## NDK ##
+  # source $WERCKER_SOURCE_DIR/install-ndk.sh
 
   export GRADLE_VERSION=1.9
   # install graddle
   source $WERCKER_SOURCE_DIR/install-gradle.sh
-  du -h
 
   export GRADLE_HOME=$HOME/gradle-1.9
   export PATH=$PATH:$GRADLE_HOME/bin
@@ -87,3 +82,4 @@ script: |
   echo "export GRADLE_HOME=\"${HOME}/gradle-1.9\"" | sudo tee -a $profile
   echo "export PATH=\"${PATH}:${GRADLE_HOME}/bin\"" | sudo tee -a $profile
   cat $profile
+  du -h
