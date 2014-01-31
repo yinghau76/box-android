@@ -82,4 +82,5 @@ script: |
   echo "export GRADLE_HOME=\"${HOME}/gradle-1.9\"" | sudo tee -a $profile
   echo "export PATH=\"${PATH}:${GRADLE_HOME}/bin\"" | sudo tee -a $profile
   cat $profile
+  cd $HOME
   du -h

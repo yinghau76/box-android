@@ -5,3 +5,8 @@ libmysqlclient18
 libmysqlclient-dev
 mysql-common
 mysql-client
+postgresql-client
+vim
+python-apt
+python-dev
+firefox
