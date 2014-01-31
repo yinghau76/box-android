@@ -86,7 +86,8 @@ CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE SOFTWARE.
 ## 1.0.0
 * updated gradle to 1.9
 * android tools 19 updated to 19.0.1 (Android 4.4.2)
-* dropped: android build tools 17 and android 17 api
+* dropped: android build tools 17, 18 and android 17 api, system image for
+level 18 (reason: box size)
 
 ## 0.0.19
 * sys image 18
