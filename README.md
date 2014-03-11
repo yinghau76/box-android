@@ -12,7 +12,7 @@
 
 The `wercker/android` box runs on ubuntu 12.04 and provides a selection of the android toolchain:
 
-* gradle 1.9
+* gradle 1.11
 * android sdk version 22.2.1
 * android build tools 18.0.1 and 19.0.3
 * android API r17 (version 4.2.2), 18 (android 4.3) and 19 (android 4.4)
@@ -83,6 +83,9 @@ CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE SOFTWARE.
 
 # Changelog
 
+## 1.0.2
+* updated gradle to 1.11
+* 
 ## 1.0.1
 * android buildtools 19.0.1 updated to 19.0.3
 
