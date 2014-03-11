@@ -83,6 +83,9 @@ CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE SOFTWARE.
 
 # Changelog
 
+## 1.0.1
+* buildtools 19.0.3 added
+
 ## 1.0.0
 * updated gradle to 1.9
 * android tools 19 updated to 19.0.1 (Android 4.4.2)
