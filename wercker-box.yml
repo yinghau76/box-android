@@ -67,14 +67,14 @@ script: |
   source $WERCKER_SOURCE_DIR/install-sdk.sh
   source $WERCKER_SOURCE_DIR/update-sdk.sh
 
-  export GRADLE_VERSION=1.9
+  export GRADLE_VERSION=1.11
   # install graddle
   source $WERCKER_SOURCE_DIR/install-gradle.sh
 
   export GRADLE_HOME=$HOME/gradle-1.9
   export PATH=$PATH:$GRADLE_HOME/bin
 
-  echo "export GRADLE_HOME=\"${HOME}/gradle-1.9\"" | sudo tee -a $profile
+  echo "export GRADLE_HOME=\"${HOME}/gradle-1.11\"" | sudo tee -a $profile
   echo "export PATH=\"${PATH}:${GRADLE_HOME}/bin\"" | sudo tee -a $profile
   cat $profile
   cd $HOME
