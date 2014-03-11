@@ -1,9 +1,9 @@
 name: android
-version: 1.0.1
+version: 1.0.2
 inherits: pjvds/java@0.1.3
 type: main
 platform: ubuntu@12.04
-description: A box created for Android development with Gradle 1.9
+description: A box created for Android development with Gradle 1.11
 keywords:
   - android
   - gradle
@@ -71,7 +71,7 @@ script: |
   # install graddle
   source $WERCKER_SOURCE_DIR/install-gradle.sh
 
-  export GRADLE_HOME=$HOME/gradle-1.9
+  export GRADLE_HOME=$HOME/gradle-1.11
   export PATH=$PATH:$GRADLE_HOME/bin
 
   echo "export GRADLE_HOME=\"${HOME}/gradle-1.11\"" | sudo tee -a $profile
