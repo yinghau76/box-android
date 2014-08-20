@@ -8,6 +8,7 @@ The `wercker/android` box runs on ubuntu 12.04 and provides a selection of the A
 * android API 18 (android 4.3) and 19 (android 4.4)
 * sys image 19 (emulators)
 * android support library
+* google play service repository
 
 The box also inherits tools from a not yet official java box, resulting in the following additional tools:
 
@@ -62,6 +63,10 @@ The MIT License (MIT)
 Copyright (c) 2013 wercker
 
 # Changelog
+
+## 1.0.5
+
+* google play service repository added
 
 ## 1.0.4
 
