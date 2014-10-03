@@ -44,11 +44,9 @@ default-build:
               code: |
                 gradle --full-stacktrace -q --project-cache-dir=$WERCKER_CACHE_DIR build
 env:
-  ANDROID_SDK_VERSION: "23"
+  ANDROID_SDK_VERSION: "23.0.2"
 
 script: |
-  sdk_version="23"
-
   profile="/etc/environment"
 
   # Start with a clean profile
