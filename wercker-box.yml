@@ -1,4 +1,4 @@
-name: android
+name: kentashoji/android
 version: 1.0.6
 inherits: pjvds/java@0.1.3
 type: main
