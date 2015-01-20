@@ -64,6 +64,13 @@ Copyright (c) 2013 wercker
 
 # Changelog
 
+## 1.0.9
+
+* updated gradle to 2.2.1
+* updated Android SDK to 24.0.2 
+* updated Android Build Tools to 21.1.2
+
+
 ## 1.0.8
 
 * updated gradle to 2.2
