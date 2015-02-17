@@ -46,7 +46,7 @@ There are a number of environment varaibles declared for your information:
 
 # What's new
 
-* update sdk version and upgraded gradle version
+* update sdk version and upgraded gradle version added additional android-20/21 tools
 
 # Guides
 
@@ -63,6 +63,9 @@ The MIT License (MIT)
 Copyright (c) 2013 wercker
 
 # Changelog
+
+## 1.0.10
+* install additional android-20, android-21 tools.
 
 ## 1.0.9
 
