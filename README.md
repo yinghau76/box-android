@@ -69,7 +69,8 @@ Copyright (c) 2013 wercker
 * updated Android SDK to 24.1.2
 * updated Android Build Tools to 22.0.1
 * updated emulator sys-image to 22 (was 19)
-* dropped build tools 19.1 (box size restrictions)
+* dropped build tools 19.1.0 (box size restrictions)
+* dropped android-19 (box size restrictions)
 
 ## 1.1.0
 * install additional android-20, android-21 tools.
