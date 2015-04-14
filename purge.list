@@ -10,3 +10,10 @@ vim
 python-apt
 python-dev
 firefox
+firefox-locale-en
+chef
+vim-common
+vim-tiny
+vim-runtime
+postgresql-client-common
+postgresql-client-9.1

@@ -4,9 +4,9 @@ The `wercker/android` box runs on ubuntu 12.04 and provides a selection of the A
 
 * gradle 2.2.1
 * android sdk version 24.1.2
-* android build tools 19.1, 20, 21.1.2 and 22.0.1
-* android API 19 (android 4.4), API 20 (4.4 with wearable extensions), API 21 (android 5.0), API 22(android 5.1)
-* sys image 19 (emulators)
+* android build tools 21.1.2 and 22.0.1
+* android API 21 (android 5.0), API 22(android 5.1)
+* sys image 22 (emulators)
 * android support library
 * google play service repository
 
@@ -40,9 +40,9 @@ build:
 
 There are a number of environment varaibles declared for your information:
 
-* ANDROID_SDK_VERSION : version of the sdk
-* ANDROID_BUILD_TOOLS : which versions of the build tools are installed.
-* ANDROID_UPDATE_FILTER : shows all sdk elements which are installed
+* ANDROID\_SDK\_VERSION : version of the sdk
+* ANDROID\_BUILD\_TOOLS : which versions of the build tools are installed.
+* ANDROID\_UPDATE\_FILTER : shows all sdk elements which are installed
 
 # What's new
 
@@ -64,10 +64,13 @@ Copyright (c) 2013 wercker
 
 # Changelog
 
-## 1.1.1
-* install additional android-22 tools.
+## 2.0.0
+* added android-22 tools.
 * updated Android SDK to 24.1.2
 * updated Android Build Tools to 22.0.1
+* updated emulator sys-image to 22 (from 19)
+* dropped build tools 19.1.0 & 20 (box size restrictions)
+* dropped android-19, android-20 (box size restrictions)
 
 ## 1.1.0
 * install additional android-20, android-21 tools.
@@ -145,7 +148,7 @@ level 18 (reason: box size)
 ## 0.0.14
 
 * expanded readme.
-* ANDROID_SDK_VERSION environment variable added
+* ANDROID\_SDK\_VERSION environment variable added
 
 ## 0.0.13
 
