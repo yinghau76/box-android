@@ -2,11 +2,11 @@
 
 The `yinghau76/android` box runs on ubuntu 12.04 and provides a selection of the Android toolchain:
 
-* gradle 2.2.1
-* android sdk version 24.1.2
-* android build tools 21.1.2 and 22.0.1
-* android API 21 (android 5.0), API 22(android 5.1)
-* sys image 22 (emulators)
+* gradle 2.10
+* android sdk version 24.4.1
+* android build tools 21.1.2, 22.0.1, and 23.0.3
+* android API 21 (android 5.0), API 22 (android 5.1), API 23 (android 6.0)
+* sys image 23 (emulators)
 * android support library
 * google play service repository
 
@@ -35,7 +35,7 @@ build:
     - script:
         name: run gradle
         code: |
-          gradle --full-stacktrace -q --project-cache-dir=$WERCKER_CACHE_DIR build
+          ./gradlew --full-stacktrace -q --project-cache-dir=$WERCKER_CACHE_DIR build
 ```
 
 There are a number of environment varaibles declared for your information:
@@ -63,6 +63,12 @@ The MIT License (MIT)
 Copyright (c) 2013 wercker
 
 # Changelog
+
+## 2.1.0
+* added android-23 tools.
+* updated Android SDK to 24.4.1
+* updated Android Build Tools to 23.0.3
+* updated emulator sys-image to 23
 
 ## 2.0.0
 * added android-22 tools.

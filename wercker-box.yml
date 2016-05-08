@@ -1,9 +1,9 @@
 name: android
-version: 2.0.0
+version: 2.1.0
 inherits: pjvds/java@0.1.3
 type: main
 platform: ubuntu@12.04
-description: A box created for Android development with Gradle 2.2.1
+description: A box created for Android development (API 23) with Gradle 2.10
 keywords:
   - android
   - gradle
@@ -62,8 +62,8 @@ script: |
   source $WERCKER_SOURCE_DIR/install-sdk.sh
   source $WERCKER_SOURCE_DIR/update-sdk.sh
 
-  export GRADLE_VERSION=2.2.1
-  # install graddle
+  export GRADLE_VERSION=2.10
+  # install gradle
   source $WERCKER_SOURCE_DIR/install-gradle.sh
 
   export GRADLE_HOME=$HOME/gradle-$GRADLE_VERSION
